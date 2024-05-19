@@ -10,24 +10,19 @@
     </head>
     <body>
         <script>
-            // Set your name
-            var displayName = "Your Name Hi";
+            
+            var displayName = "my name's bye";
 
-            // Set your profession or job
-            var profession = "Your Job";
+            
+            var profession = "python coder/cybersecurity nerd";
 
-            // Hide the credit link at the bottom
-            var disableCredit = false;
+            
+            var disableCredit = true;
 
-            // Your profile picture
-            // Note: you can store an image in the /images folder and link to it or an external URL
+
             var profilePicURL = "images/profile.jpg";
 
-            // Set your links:
-            // The title is the label of the link.
-            // The URL is that url the link will lead to
-            // The Icon is the class used to identify the Font Awesome icon used
-            // See this page for Font Awesome classes: https://fontawesome.com/v4.7/cheatsheet/ 
+
             var linkOneTitle = "Github";
             var linkOneURL = "https://github.com/destroyxlonely";
             var linkOneIcon = "fa fa-github";
@@ -67,7 +62,7 @@
         </div>
         <p id="credit"></p>
         <script>
-            // Update page with variables
+            
             document.querySelector("title").innerHTML = displayName + " | Link Page";
             document.getElementById("profile").innerHTML = "<img id='userPhoto' src='" + profilePicURL + "' alt='" + displayName + "'s Profile Picture'><div id='userName'><h1 id='usersName'>" + displayName + "</h1><p id='usersProfession'>" + profession + "</p></div>"
             document.getElementById("favicon").href = profilePicURL;
@@ -87,7 +82,7 @@
             document.getElementById("linkFive").href = linkFiveURL;
             document.getElementById("linkFive").innerHTML = "<i class='" + linkFiveIcon + "' id='iconFive'></i> " + linkFiveTitle;
 
-            // Disable credit text based on settings
+            
             if (disableCredit == true) {
                 document.getElementById("credit").style = "display: none;"
             } else {
